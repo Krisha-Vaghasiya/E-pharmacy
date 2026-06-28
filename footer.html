@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Pharmacy Footer</title>
+    
+    <!-- Google Fonts Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome for Social Media Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+        body {
+            
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        .health-priority {
+            background: url('/projectC/image/mb.jpg') no-repeat center center/cover;
+            padding: 30px 10px;
+            text-align: center;
+            color: white;
+            border-radius: 5px;
+            margin: 0px;
+            position: relative;
+            overflow: hidden;
+            height:190px; /* Set a fixed height for the section */
+        }
+
+
+        .health-priority::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(127, 190, 204, 0.5);
+            z-index: 1;
+        }
+           .health-priority h3 {
+            color: #c7f787;
+            font-size: 35px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            font-family: 'Playfair Display', serif;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .health-priority p {
+            
+            font-size: 15px;
+            position: relative;
+            z-index: 2;
+            animation: fadeIn 2.5s ease-in-out;
+            font-style: italic;
+            margin-bottom:5px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            background: #1996b2;
+            color: white;
+            padding: 40px 20px 60px 20px;
+            position: relative;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-logo, .footer-links, .footer-contacts, .footer-newsletter {
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .footer-logo, .footer-links, .footer-contacts, .footer-newsletter {
+                width: 23%;
+                text-align: left;
+            }
+        }
+
+        .footer-logo h2 span {
+            font-weight: 600;
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .footer-logo p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links ul li span {
+            font-family: 'Material Icons';
+            font-size: 20px;
+        }
+
+        .footer-links ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links ul li a:hover {
+            color: #8dc641;
+        }
+
+        .footer-contacts p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer-contacts a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-contacts p span {
+            font-family: 'Material Icons';
+            font-size: 24px;
+        }
+
+        .footer-newsletter h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer-newsletter p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer-newsletter .newsletter-box {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .footer-newsletter input {
+            width: 70%;
+            padding: 10px;
+            border: none;
+            border-radius: 30px 0 0 30px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .footer-newsletter input:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(141, 198, 97, 0.8);
+        }
+
+        .footer-newsletter button {
+            background: #8dc641;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 0 30px 30px 0;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .footer-newsletter button:hover {
+            background: #7bb03c;
+            transform: scale(1.05);
+        }
+
+        .footer-newsletter button:active {
+            transform: scale(0.95);
+        }
+
+        .footer-hours {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer-hours span {
+            font-family: 'Material Icons';
+            font-size: 20px;
+        }
+
+        .social-media-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-media-section h3 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 2px solid white;
+            border-radius: 50%;
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background-color: white;
+            color: #1996b2;
+            border-color: #8dc641;
+        }
+
+        .footer-rights {
+            text-align: center;
+            background: #136b85;
+            color: white;
+            padding: 15px 0;
+            font-size: 14px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .error-message {
+            color: #8dc641;
+            font-size: 12px;
+            margin-top: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="health-priority">
+        <h3>Your Health, Our Priority!</h3>
+        <p>Shop high-quality medicines and wellness essentials with ease.</p>
+    </div>
+
+    
+    <footer>
+        
+   
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>
+                    <span style="color: #8dc641;">E-Pharmacy</span>
+                    <span style="font-size: 16px; color: white;">online medical store</span>
+                </h2>
+                <p>Your trusted online pharmacy providing high-quality medicines, healthcare products, and wellness essentials at your convenience.</p>
+                <div class="footer-hours">
+                    <span class="material-icons">calendar_today</span>
+                    <div>
+                        <strong>Monday–Saturday</strong><br>
+                        08.00 am – 09.00 pm
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><span class="material-icons">local_shipping</span><a href="/shipping">Shipping</a></li>
+                    <li><span class="material-icons">assignment_return</span><a href="/returns">No Returns</a></li>
+                    <li><span class="material-icons">payment</span><a href="/payments">Payments</a></li>
+                    <li><span class="material-icons">contact_support</span><a href="/contact">Contact Us</a></li>
+                    <li><span class="material-icons">help_outline</span><a href="/help">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <h3>Contacts</h3>
+                <p><span class="material-icons">place</span> Shop No. 5, Near City Hospital, Gandhi Road, Bhavnagar, Gujarat 364001</p>
+                <p><span class="material-icons">email</span> <a href="mailto:sales@example.com">epharmacy.medicalbvn@gmail.com.</a></p>
+                <p><span class="material-icons">call</span> <a href="tel:1234567890">+91 98765 43210</a></p>
+                <p><span class="material-icons">call</span> <a href="tel:1234567890">+91 89453 45432</a></p>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Get Exclusive Discounts!</h3>
+                <p>Subscribe to our newsletter for special offers and promotions.</p>
+                <form class="newsletter-box" onsubmit="handleNewsletterSubmit(event)">
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="error-message" id="email-error">Please enter a valid email address from a supported domain (e.g., gmail.com, yahoo.com).</div>
+                <div class="social-media-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-rights">
+            © 2025 E-Pharmacy. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+    <!-- Newsletter Form Submission Script -->
+    <script>
+        function handleNewsletterSubmit(event) {
+            event.preventDefault(); // Prevent form submission
+
+            const emailInput = document.getElementById('email');
+            const emailError = document.getElementById('email-error');
+            const email = emailInput.value.trim();
+
+            // Regular expression for email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // List of allowed domains
+            const allowedDomains = ["gmail.com", "yahoo.com", "outlook.com", "hotmail.com"];
+
+            // Check if email format is valid
+            if (!emailRegex.test(email)) {
+                emailError.textContent = "Please enter a valid email address.";
+                emailError.style.display = 'block'; // Show error message
+                emailInput.focus(); // Focus on the email input
+                return; // Stop further execution
+            }
+
+            // Extract domain from email
+            const domain = email.split('@')[1];
+
+            // Check if domain is allowed
+            if (!allowedDomains.includes(domain)) {
+                emailError.textContent = "Please use mail valid  domain with mail format";
+                emailError.style.display = 'block'; // Show error message
+                emailInput.focus(); // Focus on the email input
+                return; // Stop further execution
+            }
+
+            // If email is valid and domain is allowed
+            emailError.style.display = 'none'; // Hide error message
+            alert(`Thank you for subscribing! We'll send exclusive offers to ${email}.`);
+            event.target.reset(); // Clear the form
+        }
+    </script>
+</body>
+</html>

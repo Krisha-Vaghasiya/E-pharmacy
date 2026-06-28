@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background: #f8f8f8;
+    text-align: center;
+}
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 35px;
+            justify-content: center;
+        }
+    
+        .product-card {
+            width: 230px;
+            text-align: center;
+            padding: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            position: relative;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+        
+        }
+    
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+    
+        .product-card img {
+            width: 150px;
+            max-height: 140px;
+            object-fit: contain;
+            border-radius: 2px;
+            margin-top: 12px;
+        }
+    
+        .product-card h3 {
+            font-size: 14px;
+            margin: 2px 0;
+            font-weight: bold;
+        }
+    
+        .price {
+            font-size: 14px;
+            color: green;
+            font-weight: bold;
+            margin: 3px 0;
+        }
+    
+        .add-to-cart {
+            background: #1996b2;
+            color: white;
+            border: none;
+            padding: 6px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-top: auto;
+            width:40%;
+            height:30px;
+        }
+    
+        .add-to-cart:hover {
+            background-color: #5a8c19;
+        }
+    
+        /* Wishlist Icon */
+        .wishlist {
+            position: absolute;
+            top: 6px;
+            right: 8px;
+            font-size: 22px;
+            color: gray;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .wishlist:hover {
+        color: #5a8c19; /* Change text/icon color on hover */
+    }

@@ -1,0 +1,71 @@
+
+
+/* Filter Form Styling */
+.filter-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-container input,
+.filter-container select,
+.filter-container button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.filter-container button {
+    background-color: #1996b2;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.filter-container button:hover {
+    background-color: #157a93;
+}
+
+/* Table Styling */
+.feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.feedback-table th,
+.feedback-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.feedback-table th {
+    background-color: #8dc641;
+    color: white;
+}
+
+/* Alternate Row Colors */
+.feedback-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .feedback-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

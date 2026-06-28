@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Hero Section */
+.hero {
+    background-image: url('../image/mdc1bg.avif');
+    background-size: cover;
+    background-position: center;
+   /* background-attachment: fixed; /* Parallax Effect */
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    position: relative;
+    animation: fadeIn 2s ease-out;
+    flex-direction: column;
+    overflow: hidden; /* Prevent scrollbars due to animations */
+}
+
+/* Overlay for Better Text Visibility */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Improved text readability */
+}
+
+/* Hero Title and Subtitle */
+.hero-title {
+    font-size: 2.5rem;
+    color: #8dc641;
+    animation: slideDown 1s ease-out;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    color: #fff;
+    animation: slideUp 1s ease-out;
+    max-width: 700px;
+    margin: 10px auto 20px;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    padding: 8px 16px;
+    background-color: #1996b2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: fadeIn 3s ease-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #157a92;
+    transform: translateY(-2px);
+}
+
+/* Smooth Scroll Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/*Categories Section Styles (For Testing Scroll) 
+.categories-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.categories-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}*/
+
+.popular-medicines {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.medicine-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+/*Offers & Discounts Section for Chronic Diseases */
+.offers-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color:  #e0f7fa;
+}
+
+.section-title {
+    font-size: 2rem;
+    color:  #8dc641;
+    margin-bottom: 30px;
+}
+.section-title > h2 {
+    color: #00796b; /* Only works for direct children */
+}
+
+
+.offer-grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;  /* Added this line for spacing between cards */
+
+
+}
+.offer-card {
+    background-color: #fff;
+    border: 1px solid  #1996b2;
+    padding: 20px;
+    
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   /* max-width: 250px;
+    transition: transform 0.3s;*/
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+}
+
+.offer-btn {
+    margin:5px;
+    padding: 5px 10px;
+    background-color: #1996b2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.offer-btn:hover {
+    background-color: #157a92; 
+}
