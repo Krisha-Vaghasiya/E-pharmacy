@@ -1,0 +1,35 @@
+# Sensitive config files
+.env
+config.php
+
+# Uploaded files by users
+uploads/
+projectC/uploads/
+
+# Admin uploaded product images (optional - remove this if you want images in repo)
+admin/upload/
+
+# Vendor / third party libraries (too large for GitHub)
+vendor/
+
+# Debug and test files
+admin/debug_log.txt
+test.php
+demo2.php
+sample.php
+helloworld.HTML
+
+# XAMPP / server files
+.htaccess
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code settings
+.vscode/
+
+# PHP error logs
+*.log
+error_log
